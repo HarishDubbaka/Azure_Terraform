@@ -3,14 +3,29 @@
 Learning Azure + Terraform to automate cloud infrastructure. Loving the power of IaC
 
 
-Day 01 – Terraform Basics 🌍⚙️
+# 🚀 Azure + Terraform — Day 01  
+Learning Azure + Terraform to automate cloud infrastructure. Loving the power of IaC!
 
-Why Terraform? → Automates infra, eliminates manual errors, scales across clouds.
+---
 
-Key Advantages → Multi‑cloud support, human‑readable syntax, state mgmt, version control, execution plans.
+## 🌍 Day 01 – Terraform Basics
 
-Installed Terraform ✅ → Verified with terraform -version.
+### 🔷 Why Terraform?
+Terraform automates infrastructure provisioning, removes manual errors, and scales across multiple cloud platforms.
 
-Infrastructure as Code makes deployments repeatable, collaborative, and scalable — a must‑have for every Cloud & DevOps engineer. 🌥️
+### 🔑 Key Advantages
+- **Multi-cloud support**  
+- **Human-readable HCL syntax**  
+- **State management** to track changes  
+- **Version control** for safe collaboration  
+- **Execution plans** to preview changes before applying  
 
-#Terraform #Azure #DevOps #Cloud #InfrastructureAsCode
+---
+
+## ⚙️ Installed Terraform ✔️
+Terraform successfully installed and verified:
+
+```bash
+terraform -version
+
+
