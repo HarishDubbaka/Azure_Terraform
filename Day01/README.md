@@ -1,4 +1,5 @@
 🚀 Why Terraform? Automating Infrastructure the Right Way
+
 Manual provisioning is slow, error‑prone, and difficult to scale. Point‑and‑click cloud GUIs often lead to inconsistent deployments and wasted time.
 
 Terraform, developed by HashiCorp, is an open‑source Infrastructure as Code (IaC) tool that enables you to define, provision, and manage infrastructure across cloud and on‑prem environments using a simple, declarative configuration language (HCL).
