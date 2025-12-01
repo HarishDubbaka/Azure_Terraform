@@ -36,4 +36,4 @@ Download Terraform
 Go to the official Terraform Downloads page.
 https://developer.hashicorp.com/terraform/install
 
-![Image Alt](
+![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/1c22fb0707222a052232221de0e85f460a99a14e/Day01/0112f7f6-2e6d-47bb-b54b-ca9b856b89f4.png)
