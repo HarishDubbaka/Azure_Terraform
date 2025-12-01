@@ -5,6 +5,8 @@ Terraform, developed by HashiCorp, is an open‑source Infrastructure as Code (I
 
 With Terraform, infrastructure becomes codified, versioned, and automated — whether you’re working in Azure, AWS, GCP, on‑prem, or hybrid setups.
 
+![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/7bea400b31556e2a5e3249a7eb4c206da51f1875/Day01/terraform.state_.gif)
+
 ✅ Key Advantages
 Multi‑cloud support – Manage infrastructure across Azure, AWS, GCP, and beyond.
 
