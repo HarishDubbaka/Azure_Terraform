@@ -23,3 +23,17 @@ Dependency awareness – Terraform automatically understands resource relationsh
 
 🌥️ Why It Matters
 Terraform makes infrastructure scalable, repeatable, and collaborative — empowering DevOps and Cloud engineers to deliver faster, safer, and more reliable environments. It’s not just automation; it’s infrastructure done right. ⚙️
+
+
+🛠️ Day 01 Task: Install Terraform
+
+Step 1: Prerequisites
+Ensure you have Admin rights on your machine.
+Install a supported package manager (e.g., Chocolatey for Windows, Homebrew for macOS, or apt/yum for Linux).
+Verify you have Git installed (optional but recommended for version control).
+
+Download Terraform
+Go to the official Terraform Downloads page.
+https://developer.hashicorp.com/terraform/install
+
+![Image Alt](
