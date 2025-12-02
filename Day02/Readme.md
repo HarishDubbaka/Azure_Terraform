@@ -34,6 +34,7 @@ Provisioners execute commands or scripts after a resource is created or before d
 🔵 Terraform Core Version vs Provider Version
 
  ![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/c6ea0b830f6794aaa7507e0b66483236551a3c48/Day02/providerversion%20vs%20required%20version.png)
+ 
 🔹 Terraform Core Version
 
 Terraform Core is the main Terraform engine responsible for:
