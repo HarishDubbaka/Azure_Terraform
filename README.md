@@ -6,7 +6,6 @@ Learning Azure + Terraform to automate cloud infrastructure — embracing the po
 Terraform by HashiCorp helps create, manage, and automate cloud resources using simple configuration files.
 
 🌍 Day 01 – Terraform Basics
-
 🔷 Why Terraform?
 
 Terraform automates infrastructure provisioning, eliminates manual errors, and scales across clouds.
@@ -14,9 +13,13 @@ Terraform automates infrastructure provisioning, eliminates manual errors, and s
 🔑 Key Advantages
 
 Multi-cloud support
+
 Human-readable HCL
+
 State management
+
 Version control-friendly
+
 Execution plans for safe changes
 
 ✔️ Installed Terraform Successfully
@@ -30,13 +33,15 @@ Today I explored the core concept that connects Terraform with cloud platforms.
 🔹 What I Learned
 
 Terraform Providers
+
 Provider version vs Terraform Core version
+
 Why versioning matters
+
 Version constraints
+
 Operators for version control
 
 📈 Next Steps
 
 Continuing the journey — exploring Terraform modules, state management, and CI/CD integration next 🚀
-
-
