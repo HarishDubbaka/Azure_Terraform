@@ -1,40 +1,42 @@
 ![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/c6d3ece0a95b78bfc1a62e8c17f8dc7341db10b3/Day01/1_aJPzBIUo4tipOo8707GFsw.png)
 
-# 🚀 Azure + Terraform Learning Journey
+🚀 Azure + Terraform Learning Journey
 
-Learning **Azure + Terraform** to automate cloud infrastructure — embracing the power of Infrastructure as Code (IaC)!
+Learning Azure + Terraform to automate cloud infrastructure — embracing the power of Infrastructure as Code (IaC)!
+Terraform by HashiCorp helps create, manage, and automate cloud resources using simple configuration files.
 
-Terraform is an IaC tool by **HashiCorp** that lets you create, manage, and automate cloud resources using simple configuration files.
+🌍 Day 01 – Terraform Basics
 
----
+🔷 Why Terraform?
 
-## 🌍 Day 01 – Terraform Basics
+Terraform automates infrastructure provisioning, eliminates manual errors, and scales across clouds.
 
-### 🔷 Why Terraform?
-Terraform automates infrastructure provisioning, removes manual errors, and scales across multiple cloud platforms.
+🔑 Key Advantages
 
-### 🔑 Key Advantages
-- Multi-cloud support  
-- Human-readable HCL syntax  
-- State management to track changes  
-- Version control for safe collaboration  
-- Execution plans to preview changes  
+Multi-cloud support
+Human-readable HCL
+State management
+Version control-friendly
+Execution plans for safe changes
 
-✔️ **Installed Terraform Successfully**
-```bash
+✔️ Installed Terraform Successfully
+
 terraform -version
-## 🌍 Day 02 – Providers & Plugins
 
-### 🔑 Key Concepts
-Providers act as a bridge between Terraform and external services
+🌍 Day 02 – Terraform Provider
 
-Provider plugins define how resources are created, updated, or deleted
+Today I explored the core concept that connects Terraform with cloud platforms.
 
-Version constraints ensure compatibility and stable deployments
+🔹 What I Learned
 
-📌 A solid understanding of providers is key to writing reliable, scalable IaC.
+Terraform Providers
+Provider version vs Terraform Core version
+Why versioning matters
+Version constraints
+Operators for version control
 
 📈 Next Steps
-More learning ahead — diving deeper into Terraform modules, state management, and CI/CD integration 🚀
+
+Continuing the journey — exploring Terraform modules, state management, and CI/CD integration next 🚀
 
 
