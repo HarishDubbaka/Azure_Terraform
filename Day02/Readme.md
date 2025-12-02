@@ -101,10 +101,4 @@ Version constraints prevent breaking changes and ensure compatibility.
 
 📌 **Summary:**  
 Terraform Core and Providers are versioned independently. Using **version constraints** ensures predictable, stable, and team‑friendly deployments.
-```
 
----
-
-This version is **GitHub‑ready**: clear headings, code blocks, images, and bullet points. It balances technical depth with readability, making it useful for both recruiters and peers following your Terraform journey.
-
-👉 Do you want me to also add a **“Hands‑On Example” section** (like a sample `.tf` file combining core + provider version constraints) so readers can immediately try it out?
