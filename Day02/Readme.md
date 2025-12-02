@@ -33,8 +33,7 @@ Provisioners execute commands or scripts after a resource is created or before d
 
 🔵 Terraform Core Version vs Provider Version
 
-Need to add the provider vsrion image
-
+ ![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/c6ea0b830f6794aaa7507e0b66483236551a3c48/Day02/providerversion%20vs%20required%20version.png)
 🔹 Terraform Core Version
 
 Terraform Core is the main Terraform engine responsible for:
@@ -84,7 +83,7 @@ Note: Providers evolve independently from Terraform Core.
 
 Version constraints prevent breaking changes and ensure compatibility.
 
-need to add the image of contrains and patch
+ ![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/c6ea0b830f6794aaa7507e0b66483236551a3c48/Day02/terraform%20constrants.png)
 
 📌 Terraform Version Constraints — Summary Table
 Operator	Meaning	Example	Allowed Versions
