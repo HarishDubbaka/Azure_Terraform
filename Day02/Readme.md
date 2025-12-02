@@ -83,18 +83,9 @@ Note: Providers evolve independently from Terraform Core.
 
 Version constraints prevent breaking changes and ensure compatibility.
 
- ![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/c6ea0b830f6794aaa7507e0b66483236551a3c48/Day02/terraform%20constrants.png)
+ ![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/89bd27893a03a9c8700b876e2219548a564ebb70/Day02/main%20constanins%20.png)
 
-📌 Terraform Version Constraints — Summary Table
-Operator	Meaning	Example	Allowed Versions
-=	Exact version	= 3.0.2	Only 3.0.2
-!=	Not equal	!= 3.0.2	Any version except 3.0.2
->	Greater than	> 3.0.0	3.0.1, 3.1, 4.0…
->=	Greater or equal	>= 1.1.0	1.1.0, 1.2, 2.0…
-<	Less than	< 3.0.0	2.x, 1.x…
-<=	Less or equal	<= 2.5	2.5, 2.4, 2.3…
-~>	Pessimistic constraint (rightmost part can increase)	~> 3.0.2	3.0.3 → 3.0.x (not 3.1)
-~>	Minor-only constraint	~> 3.1	3.1.1 → 3.1.x (not 3.2)
+ ![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/89bd27893a03a9c8700b876e2219548a564ebb70/Day02/table%20consttains.png).
 
 
 🧠 Why Versioning Matters
