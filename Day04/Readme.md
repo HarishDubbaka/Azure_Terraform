@@ -1,5 +1,5 @@
 
-# 📘 Terraform State – Complete Guide
+# 📘 Terraform State 
 
 Terraform **state** is the *source of truth* for your infrastructure. It tracks all resources Terraform manages, allowing Terraform to **plan, update, and destroy** resources accurately.
 
