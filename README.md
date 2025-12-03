@@ -42,6 +42,13 @@ Today I explored the core concept that connects Terraform with cloud platforms.
 
 ---
 
+## 🌍 Day 03 - Resource Group and Storage Account
+
+* **Authentication and Authorization to Azure resources
+* **Creating resource groups
+* **Storage account management
+* **Understanding dependencies
+
 ## 📈 Next Steps
 
 Continuing the journey — exploring **Terraform modules**, **state management**, and **CI/CD integration** next 🚀
