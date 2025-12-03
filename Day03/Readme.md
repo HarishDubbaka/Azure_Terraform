@@ -135,7 +135,9 @@ Destroying without backups is risky and can permanently delete data. Use this ch
 ##- Preview full destroy: Review carefully.
 terraform plan -destroy
 - Destroy: Proceed only after backup verification.
-terraform destroy
+ ```bash
+   terraform destroy 
+   ```
 - Post-checks: Confirm no stragglers in the subscription; document artifacts and restore points.
 
 Important:
@@ -152,5 +154,5 @@ Important:
 ## 📚 References
 - [Terraform AzureRM Provider Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest)
 - [Azure CLI Documentation](https://learn.microsoft.com/en-us/cli/azure/)
-```
+
 
