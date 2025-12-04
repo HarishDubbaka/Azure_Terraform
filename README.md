@@ -42,7 +42,7 @@ Today I explored the core concept that connects Terraform with cloud platforms.
 
 ---
 
-🌍 Day 03 – Resource Group and Storage Account
+## 🌍 Day 03 – Resource Group and Storage Account
 
 Focused on Azure resource creation and dependencies.
 
@@ -52,6 +52,22 @@ Focused on Azure resource creation and dependencies.
 * Creating Resource Groups
 * Storage Account management
 * Understanding dependencies
+
+---
+
+## 🌍 Day 04 – State file management - Remote Backend
+
+Today I explored the core concept that connects Terraform with cloud platforms.
+
+### 🔹 What I Learned
+
+* **How Terraform updates Infra**
+* **Terraform state file**
+* **State file best practices**
+* **Remote backend setup**
+* **State management**
+
+---
 
 
 ## 📈 Next Steps
