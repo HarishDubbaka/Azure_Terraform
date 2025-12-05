@@ -141,12 +141,18 @@ locals {
 
 ---
 
-## ✅ Best Practices
+## ✅ Best Practices for Using Terraform Variables
 
-- Always add **descriptions** for clarity.  
-- Use **locals** for repeated values (tags, names).  
-- Keep variable names **consistent** across modules.  
-- Document variable usage in your README for team visibility.  
+
+Use meaningful variable names → Clearly indicate the variable’s purpose.
+Provide clear descriptions → Explain the role and usage of each variable.
+Set appropriate data types → Ensure data integrity and prevent errors.
+Define default values → Simplify configuration and reduce manual input.
+Implement validation rules → Enforce constraints and prevent invalid configurations.
+Mark sensitive variables as sensitive → Protect secrets like passwords and API keys.
+Organize variables into logical groups → Use separate files (e.g., network.tfvars, compute.tfvars).
+Document your variables thoroughly → Help teams understand usage and configuration.
+Use modules effectively → Make infrastructure reusable and adaptable.
 
 ---
 
