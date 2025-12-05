@@ -94,13 +94,3 @@ project-root/
      └── production/
 ```
 
----
-
-💡 **Pro Tip:** Start small, but design with scalability in mind. Your future self (and your teammates) will thank you.
-```
-
----
-
-This README.md is ready to drop into your repo. It balances **technical clarity** with **professional polish** — perfect for both team collaboration and showcasing your Terraform expertise publicly.  
-
-Would you like me to also create a **shorter LinkedIn-friendly version** of this README so you can share it as a post to highlight your learning journey?
