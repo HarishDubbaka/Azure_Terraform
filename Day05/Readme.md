@@ -7,7 +7,7 @@ This flexibility allows for seamless adjustments to different environments or re
 
 # Terraform Variables Guide
 
-![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/63e8cdeaef48eed2f52dea41c305130c2c5082c0/Day05/variables.jpg).
+![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/63e8cdeaef48eed2f52dea41c305130c2c5082c0/Day05/variables.jpg)
 
 A quick reference for understanding and using **Terraform variables** effectively.  
 
@@ -124,7 +124,7 @@ terraform plan
 
 # 🔹 Variable Precedence (Highest → Lowest)
 
-![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/63e8cdeaef48eed2f52dea41c305130c2c5082c0/Day05/presidence.png).
+![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/63e8cdeaef48eed2f52dea41c305130c2c5082c0/Day05/presidence.png)
 
 1. Command-line `-var`
 2. `.tfvars` / `*.auto.tfvars`
