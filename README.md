@@ -74,11 +74,11 @@ Today I explored the core concept that connects Terraform with cloud platforms.
 
 ### 🔹 Key Learnings
 
-* **Input variables
-* **Output variables
-* **Locals
-* **Variable precedence
-* **Variable files (tfvars)
+* ** Input variables
+* ** Output variables
+* ** Locals
+* ** Variable precedence
+* ** Variable files (tfvars)
 
 ---
 
