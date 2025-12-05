@@ -82,6 +82,19 @@ Today I explored the core concept that connects Terraform with cloud platforms.
 
 ---
 
+## 🌍 Day 06 –  File Structure
+
+Today I explored the file Structure & Best Practices.
+
+### 🔹 Key Learnings
+
+* Terraform file organization
+* Sequence of file loading
+* Best practices for structure
+* Stable Files (rarely change)
+* Frequently Changing Files
+
+
 ## 📈 Next Steps
 
 Continuing the journey — exploring **Terraform modules**, **state management**, and **CI/CD integration** next 🚀
