@@ -1,6 +1,6 @@
 Terraform Type Constraints Guide
 
-This document explains the fundamental and complex type constraints in Terraform, along with commonly used commands.
+This guide explains the fundamental and complex type constraints in Terraform, along with commonly used commands.
 
 🔹 Fundamental Types: Your Building Blocks
 
