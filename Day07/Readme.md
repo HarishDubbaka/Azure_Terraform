@@ -14,20 +14,36 @@ Tooday we've covered a wide range of the fundamental and complex types that are 
   description = "The environment for the resources"
   type        = string
   default     = "development"
+  }
   
-}
-
   ```
-
 
 - **Number**: 
   - The **number** type accepts both integers and floating-point numbers. 
   - For instance, `0.1` and `100` are both valid. Terraform’s automatic inference for numbers makes it very flexible when it comes to inputs, and you don't have to worry about specifying whether a number is an integer or decimal unless it's explicitly required.
 
+```hcl
+  variable "storage_os_disk" {
+  description = "The name of the storage disk size in GB"
+  type        = number
+  default     = 80
+  
+}
+  ```
+
 - **Bool**: 
   - **Boolean** values are commonly used to enable or disable certain features or flags.
   - Boolean values in Terraform are case-insensitive (`true`, `TRUE`, `false`, `FALSE` are all valid).
+ 
+```hcl
+ variable "delete_os_disk_on_termination" {
+  description = "Enable or disable delete_os_disk_on_termination"
+  type        = bool
+  default     = true
+  
+}
 
+  ```
 ### **Complex Types**: When Simple Isn’t Enough
 - **List**: 
   - Lists are ordered collections, and all elements in a list must have the same type.
