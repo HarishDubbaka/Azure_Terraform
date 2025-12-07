@@ -1,4 +1,6 @@
-This is a great summary of Terraform type constraints! You've covered a wide range of the fundamental and complex types that are essential for defining variables in a clean and structured way. Let me add a few extra details and tips to make the guide even more comprehensive:
+Terraform type constraints! 
+
+Tooday we've covered a wide range of the fundamental and complex types that are essential for defining variables in a clean and structured way. Let me add a few extra details and tips to make the guide even more comprehensive:
 
 ---
 
@@ -6,6 +8,17 @@ This is a great summary of Terraform type constraints! You've covered a wide ran
 - **String**: 
   - A **string** type is for any kind of textual data, such as names, descriptions, or file paths.  
   - You can also use interpolation within a string, like `"${var.environment}"`, but in newer versions of Terraform, you should use `${}` only within expressions or in `template_file` resources.
+
+  ```bash
+  variable "environment" {
+  description = "The environment for the resources"
+  type        = string
+  default     = "development"
+  
+}
+
+  ```
+
 
 - **Number**: 
   - The **number** type accepts both integers and floating-point numbers. 
