@@ -1,4 +1,4 @@
-### * Terraform type constraints! 
+### **Terraform type constraints! 
 
 Tooday we've covered a wide range of the fundamental and complex types that are essential for defining variables in a clean and structured way. Let me add a few extra details and tips to make the guide even more comprehensive:
 
