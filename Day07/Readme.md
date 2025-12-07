@@ -50,21 +50,80 @@ Tooday we've covered a wide range of the fundamental and complex types that are 
   - Lists are 0-indexed, meaning the first item is `index 0`.
   - Example use case: managing availability zones or other ordered configurations.
 
+  ```hcl
+  variable "availability_zones" {
+  type        = list(string)
+  description = "List of AZs to deploy into"
+  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
+}
+
+  ```
+
 - **Map**: 
   - A **map** is an unordered collection of key-value pairs, which is very useful for associating metadata (like tags) to resources.
   - The keys are always strings, while the values can be any type (like another string, number, or even complex types like objects).
 
+ ```hcl
+variable "tags" {
+  description = "A map of tags to assign to the resources"
+  type        = map(string)
+  default     = {
+    environment = "staging"
+    owner       = "Harish"
+    project     = "TerraformDemo"
+  }
+  
+}
+
+  ```
+
 - **Tuple**: 
   - Tuples are ordered collections that can hold multiple different types in fixed positions. For example, a tuple might contain a string, a number, and a boolean value. 
   - This is useful when you need a precise, fixed structure for things like network configurations or server settings.
+
+```hcl
+variable "network_config" {
+  description = "Type of network configuration"
+  type        = tuple([string, string, number])
+  default     = ["10.0.0.0/16", "10.0.2.0/24", 24]
+}
+
+  ``` 
   
 - **Set**: 
   - **Sets** are unordered collections of unique values, meaning duplicates are automatically removed. 
   - Sets are great for ensuring that a list of values (e.g., security group IDs or region names) doesn't accidentally contain duplicates.
 
+```hcl
+variable "security_groups" {
+  type        = set(string)
+  description = "Set of security group IDs"
+  default     = ["sg-123", "sg-456", "sg-789"]
+}
+  ``` 
 - **Object**: 
   - An **object** type lets you define more structured, nested configurations with specific attributes. 
   - Each attribute can have its own type and the entire object can represent a more complex configuration, like a VM or a network interface.
+
+```hcl
+variable "vm_config" {
+  type = object({
+    size         = string
+    publisher    = string
+    offer        = string
+    sku          = string
+    version      = string
+  })
+  description = "Virtual machine configuration"
+  default = {
+    size         = "Standard_DS1_v2"
+    publisher    = "Canonical"
+    offer        = "0001-com-ubuntu-server-jammy"
+    sku          = "22_04-lts"
+    version      = "latest"
+  }
+}
+  ``` 
 
 ### **Advanced Type Constraints**
 - **Any Type**: 
@@ -144,4 +203,3 @@ Always ensure that you format your code properly using `terraform fmt`, validate
 
 ---
 
-Do you have any particular use cases or examples you’re working with where you want more in-depth advice?
