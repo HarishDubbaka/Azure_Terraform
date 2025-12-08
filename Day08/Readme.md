@@ -46,6 +46,9 @@ Terraform provides five major meta arguments:
 
 ---
 
+![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/a4e9299bcb82cbc86496699ad0f52a7cc926ff8c/Day08/count%20.png)
+
+
 # 1️⃣ `count` – Create Multiple Instances Easily
 
 The `count` argument allows you to create multiple resources from a single block using an index.
