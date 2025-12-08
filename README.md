@@ -121,7 +121,7 @@ Today I explored the Type constraints in Terraform
 
 ## 📈 Next Steps
 
-Continuing the journey — exploring **Terraform modules**, **state management**, and **CI/CD integration** next 🚀
+Continuing the journey — next up
 
 ---
 
