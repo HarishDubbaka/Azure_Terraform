@@ -1,4 +1,4 @@
-# 🚀 Terraform Meta Arguments – 
+# 🚀 Terraform Meta Arguments 
 
 
 Meta Arguments in Terraform offer powerful control over how resources are created, managed, and destroyed. Whether you're building a simple file or deploying hundreds of cloud resources, understanding meta arguments will greatly improve your Infrastructure as Code (IaC) workflows.
