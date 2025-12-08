@@ -94,6 +94,30 @@ Today I explored the file Structure & Best Practices.
 * Stable Files (rarely change)
 * Frequently Changing Files
 
+---
+
+## 🌍 Day 07 – Type constraints in Terraform
+
+Today I explored the Type constraints in Terraform
+
+### 🔹 Key Learnings
+
+* String, number, bol
+* Map, set, list, Tuple, Objects
+
+
+---
+
+## 🌍 Day 08 –  Terraform Resource Meta Arguments | Count VS For Each
+
+
+### 🔹 Key Learnings
+
+* Understanding count
+* for_each loop
+* for loop
+
+
 
 ## 📈 Next Steps
 
