@@ -177,12 +177,9 @@ resource "azurerm_resource_group" "example" {
 ⚠️ **Important:**
 replace_triggered_by tells Terraform:
 “If this other resource changes, then destroy and recreate this resource.”
-
 Terraform does NOT allow you to trigger replacement using only a variable value (like var.allowed_locations[2]).
 It must be triggered by a resource, not a variable.
-```
-
-```
+---
 # 5️⃣ precondition & postcondition
 
 You can also use custom condition checks with the lifecycle meta-argument. By adding precondition and postcondition blocks with a lifecycle block, you can specify assumptions and guarantees about how resources and data sources operate.
