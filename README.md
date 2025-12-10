@@ -117,8 +117,29 @@ Today I explored the Type constraints in Terraform
 * for_each loop
 * for loop
 
+---
 
+## 🌍 Day 09 – The Lifecycle meta-arguments
 
+### 🔹 Key Learnings
+
+* create before destroy
+* prevent destroy
+* ignore changes
+* replace triggered by
+* customer condition
+
+---
+
+## 🌍 Day 10 –  Dynamic Blocks and expressions
+
+### 🔹 Key Learnings
+
+* Dynamic blocks
+* Conditional expressions
+* Splat Expressions
+
+---
 ## 📈 Next Steps
 
 Continuing the journey — next up
