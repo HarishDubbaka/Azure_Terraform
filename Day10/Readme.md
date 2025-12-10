@@ -180,7 +180,9 @@ terraform destroy --auto-approve
 This ensures:
 
 No accidental Azure billing
+
 No leftover NSGs, NICs, VMs, or Resource Groups
+
 Clean Terraform state for future runs
 
 👉 Always run destroy if the infrastructure is no longer needed.
