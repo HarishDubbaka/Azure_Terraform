@@ -131,7 +131,7 @@ Today I explored the Type constraints in Terraform
 
 ---
 
-## 🌍 Day 10 –  Dynamic Blocks and expressions
+## 🌍 Day 10 –  Terraform Expressions
 
 ### 🔹 Key Learnings
 
