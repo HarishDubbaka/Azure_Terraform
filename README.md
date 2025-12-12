@@ -140,6 +140,29 @@ Today I explored the Type constraints in Terraform
 * Splat Expressions
 
 ---
+
+## 🌍 Day 11 –  Terraform Expressions
+
+### 🔹 Key Learnings
+
+* Built-in functions
+* Practical examples
+* tasks for practice
+
+
+---
+
+## 🌍 Day 12 –  Terraform Expressions
+
+### 🔹 Key Learnings
+
+* Built-in functions
+* Practical examples
+* tasks for practice
+
+
+---
+
 ## 📈 Next Steps
 
 Continuing the journey — next up
