@@ -84,11 +84,11 @@ data "azurerm_virtual_network" "existing_vnet" {
 
 There are several practical reasons to leverage datasources:
 
-Cross-environment integration: You may want to link different layers of your infrastructure (e.g., backend database created in one module and frontend in another).
+* Cross-environment integration: You may want to link different layers of your infrastructure (e.g., backend database created in one module and frontend in another).
 
-Access existing resources: Resources created via Ansible, CloudFormation, or manual provisioning can be read and utilized.
+* Access existing resources: Resources created via Ansible, CloudFormation, or manual provisioning can be read and utilized.
 
-Reduce duplication: Instead of hardcoding values or duplicating configuration, use datasources to dynamically fetch the latest information.
+* Reduce duplication: Instead of hardcoding values or duplicating configuration, use datasources to dynamically fetch the latest information.
 
 In short, datasources make Terraform more modular, flexible, and reliable.
 
