@@ -163,6 +163,15 @@ Today I explored the Type constraints in Terraform
 
 ---
 
+## 🌍 Day 13 –  Data Sources
+
+### 🔹 Key Learnings
+
+* Using data sources
+* Practical example
+
+---
+
 ## 📈 Next Steps
 
 Continuing the journey — next up
