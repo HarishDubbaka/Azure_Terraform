@@ -172,6 +172,18 @@ Today I explored the Type constraints in Terraform
 
 ---
 
+## 🌍 Day 14 –  High available/scalable Infrastructure Deployment ( Mini Project 1 )
+
+### 🔹 Key Learnings
+
+* VM Scale Sets
+* Network Security Groups
+* Loadbalancer, Nat Gateway, Public IP , Autoscaling rules etc
+* Code Sample
+
+---
+
+
 ## 📈 Next Steps
 
 Continuing the journey — next up
