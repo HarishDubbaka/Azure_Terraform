@@ -1,6 +1,6 @@
----
+
 ✅ 🚀 **Leveling Up with Terraform + Azure VMSS: A Day of Real‑World Debugging & Deep Learning**
----
+
 Today, I worked on building a production‑grade Azure Virtual Machine Scale Set (VMSS) using Terraform — complete with Load Balancer, NAT pools, NSG rules, autoscaling, and cloud‑init scripts.  
 
 And yes… I ran into *plenty* of errors.  
