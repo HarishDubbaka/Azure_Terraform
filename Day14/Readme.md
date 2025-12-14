@@ -35,6 +35,7 @@ One missing brace `{` can cause Terraform to ignore a file completely, leading t
 ---
 
 💡 **My biggest learning:**  
+
 Terraform isn’t just about writing infrastructure code — it’s about understanding how every resource, variable, and reference connects. Once the structure is clean, everything becomes predictable and powerful.
 
 If you’re working with Terraform and Azure VMSS and hitting errors, keep going. Every error message is a clue, and every fix makes you better.
@@ -84,10 +85,10 @@ public_key = file("${path.module}/id_rsa.pub")
 
 
 💡 **One more important habit I reinforced:**  
+
 Always review and destroy unused cloud resources. It’s easy to overlook a VMSS, load balancer, or public IP during testing — and those forgotten resources can quietly accumulate cost. Being disciplined about cleanup is just as important as building the infrastructure itself.
 
 ---
 
-]
 
 
