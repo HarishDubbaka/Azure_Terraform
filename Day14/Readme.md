@@ -1,5 +1,5 @@
 ---
-🚀 **Leveling Up with Terraform + Azure VMSS: A Day of Real‑World Debugging & Deep Learning**
+✅ 🚀 **Leveling Up with Terraform + Azure VMSS: A Day of Real‑World Debugging & Deep Learning**
 ---
 Today, I worked on building a production‑grade Azure Virtual Machine Scale Set (VMSS) using Terraform — complete with Load Balancer, NAT pools, NSG rules, autoscaling, and cloud‑init scripts.  
 
@@ -80,7 +80,6 @@ Terraform needs the **public key**, so in your VMSS:
 public_key = file("${path.module}/id_rsa.pub")
 ```
 
-✅ This will now work  
 ---
 
 
