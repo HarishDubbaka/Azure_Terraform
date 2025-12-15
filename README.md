@@ -183,6 +183,15 @@ Today I explored the Type constraints in Terraform
 
 ---
 
+## 🌍 Day 14 –  VNET and Peering ( Mini Project 2 )
+
+### 🔹 Key Learnings
+
+* Virtual Network Creation
+* VNet peering setup
+* Code Sample
+
+---
 
 ## 📈 Next Steps
 
