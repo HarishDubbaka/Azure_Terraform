@@ -88,16 +88,23 @@ Peering gives connectivity **without merging address spaces**.
 ✅ How It SHOULD Be (Conceptually)
 
 Each VNet must have unique, non-overlapping CIDR ranges:
-VNet	Address Space
-VNet-1	10.0.0.0/16
-VNet-2	10.1.0.0/16
+
+| VNet   | Address Space   |
+|--------|------------------|
+| VNet-1 | 10.0.0.0/16      |
+| VNet-2 | 10.1.0.0/16      |
+
 
 # ✅ 🔑 Summary of Mistakes
 
 #	Mistake	Impact
+
 1	Same CIDR for both VNets	❌ Peering fails
+
 2	Subnets inside overlapping range	❌ Azure blocks
+
 3	Incorrect network design	❌ Architecture issue
+
 4	None in peering config	✅ Correct
 
 
