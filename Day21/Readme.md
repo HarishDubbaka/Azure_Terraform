@@ -1,4 +1,3 @@
-
 # Terraform Daily Essentials
 
 Today I focused on essential Terraform commands that are used daily while working with Infrastructure as Code (IaC).  
