@@ -183,12 +183,78 @@ Today I explored the Type constraints in Terraform
 
 ---
 
-## 🌍 Day 14 –  VNET and Peering ( Mini Project 2 )
+## 🌍 Day 15 –  VNET and Peering ( Mini Project 2 )
 
 ### 🔹 Key Learnings
 
 * Virtual Network Creation
 * VNet peering setup
+* Code Sample
+
+---
+
+## 🌍 Day 16 –  Azure AD Authentication ( Mini Project 3 )
+
+### 🔹 Key Learnings
+
+* Authentication methods
+* Service principals
+* Managed identities
+
+---
+
+## 🌍 Day 17 –  Azure Web Apps Blue-Green Deployment ( Mini Project 4 )
+
+### 🔹 Key Learnings
+
+* App Service creation
+* Configuration
+* Deployment
+
+---
+
+## 🌍 Day 18 –  Terraform Interview Questions & Preparation
+
+### 🔹 Key Learnings
+
+* Questions
+* Scenario Based
+* Errors and How to resolove
+
+---
+
+## 🌍 Day 19 –  Terraform Cheat-Sheet
+
+### 🔹 Key Learnings
+
+* Cheat-sheet
+
+---
+
+## 🌍 Day 20 –  Why VS Code is Important for Terraform
+
+### 🔹 Key Learnings
+
+* Easy to Write Terraform Code
+* Finds Errors Early
+* Proper Formatting
+
+---
+
+## 🌍 Day 21 –  Terraform Daily Essentials
+
+### 🔹 Key Learnings
+
+* Commands
+
+---
+
+## 🌍 Day 22 –  Azure Functions ( Mini Project 5 )
+
+### 🔹 Key Learnings
+
+* Function App setup
+* Configuration
 * Code Sample
 
 ---
