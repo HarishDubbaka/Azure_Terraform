@@ -1,5 +1,11 @@
 # Azure QR Code Generator using Terraform
 
+
+
+![Image Alt](https://github.com/HarishDubbaka/Azure_Terraform/blob/4213c21d1b022709969f2969facfe0489a861cc0/Day20/azure-qr-code-architecture.png)
+
+
+
 This project demonstrates how to **provision Azure infrastructure using Terraform** and **deploy a Node.js-based Azure Function App** that generates QR codes and stores them in an Azure Storage Account.
 
 ---
