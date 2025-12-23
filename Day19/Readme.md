@@ -1,98 +1,43 @@
-## Why **VS Code** is Important for **Terraform**
+# Terraform Essentials & Cheat Sheet
 
-Terraform is used to **write code to create cloud infrastructure** (VMs, networks, storage, etc.).
-To write and manage this code **easily and correctly**, we use **VS Code**.
-
----
-
-## 1️⃣ Easy to Write Terraform Code
-
-VS Code understands Terraform files (`.tf`).
-
-* It highlights keywords like `provider`, `resource`, `variable`
-* Code looks clean and readable
-
-👉 This helps you **understand what you are writing**.
+## 📌 Daily Focus
+Today I focused on essential Terraform commands that are used daily while working with Infrastructure as Code (IaC).  
+Mastering these commands helps in planning, deploying, and managing cloud infrastructure efficiently.
 
 ---
 
-## 2️⃣ Auto Suggestions (Very Important)
+## 🚀 Core Commands
 
-When you start typing a resource, VS Code suggests options.
-
-Example:
-
-* You type `resource "azurerm_`
-* VS Code shows available Azure resources
-
-👉 This **reduces typing mistakes** and saves time.
-
----
-
-## 3️⃣ Finds Errors Early
-
-VS Code shows errors while you are typing:
-
-* Missing arguments
-* Wrong syntax
-* Invalid blocks
-
-👉 You can **fix mistakes before running Terraform commands**.
+| Command              | Purpose                                                                 | Example                          |
+|----------------------|-------------------------------------------------------------------------|----------------------------------|
+| `terraform init`     | Initializes a new/existing project, downloads providers, sets up backend | `terraform init`                 |
+| `terraform plan`     | Shows what changes Terraform will make without applying them             | `terraform plan -out=tfplan`     |
+| `terraform apply`    | Applies the planned changes to provision/update infrastructure           | `terraform apply tfplan`         |
+| `terraform destroy`  | Tears down all resources defined in configuration                        | `terraform destroy`              |
+| `terraform validate` | Checks syntax and internal consistency of `.tf` files                    | `terraform validate`             |
+| `terraform fmt`      | Formats `.tf` files to canonical style                                   | `terraform fmt -recursive`       |
+| `terraform show`     | Displays current state or plan in human-readable form                    | `terraform show`                 |
+| `terraform output`   | Prints values defined as outputs in configuration                        | `terraform output storage_name`  |
+| `terraform state`    | Inspect or modify Terraform’s state file                                 | `terraform state list`           |
+| `terraform workspace`| Manage multiple workspaces (dev/test/prod separation)                    | `terraform workspace new dev`    |
 
 ---
 
-## 4️⃣ One Tool for Coding + Running Commands
-
-VS Code has a **built-in terminal**.
-
-You can run:
-
-* `terraform init`
-* `terraform plan`
-* `terraform apply`
-
-👉 No need to open a separate command prompt.
+## ⚡ Pro Tips
+- Always run `terraform plan` before `apply` to avoid surprises.  
+- Use **workspaces** for environment separation (dev/test/prod).  
+- Keep your **state file secure** (remote backends like Azure Storage or S3).  
+- Use **modules** for reusable infrastructure patterns.  
+- Run `terraform fmt` and `terraform validate` before committing code.  
 
 ---
 
-## 5️⃣ Proper Formatting
-
-VS Code formats Terraform code automatically:
-
-* Correct indentation
-* Clean structure
-
-👉 Code looks **professional and interview-ready**.
+## 📖 Why These Matter
+These commands form the backbone of daily Terraform workflows. By mastering them, you can:
+- Plan infrastructure changes safely before applying.  
+- Deploy cloud resources consistently.  
+- Manage lifecycle operations like updates and teardown.  
+- Keep configurations clean, validated, and well-documented.  
 
 ---
-
-## 6️⃣ Works Well with Git (DevOps Use)
-
-VS Code tracks:
-
-* What code you changed
-* Previous versions
-
-👉 This is **very important in DevOps and team projects**.
-
----
-
-## 7️⃣ Helps in Learning & Real Projects
-
-For beginners:
-
-* Easy to learn Terraform syntax
-  For professionals:
-* Manage large Terraform projects
-
-👉 VS Code grows with your skill level.
-
----
-
-## Simple One-Line Explanation (Interview Answer)
-
-> **VS Code is important for Terraform because it makes writing, validating, and managing infrastructure code easy, error-free, and efficient with auto-suggestions, formatting, terminal access, and Git support.**
-
----
-
 
