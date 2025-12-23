@@ -1,0 +1,181 @@
+# Azure QR Code Generator using Terraform
+
+This project demonstrates how to **provision Azure infrastructure using Terraform** and **deploy a Node.js-based Azure Function App** that generates QR codes and stores them in an Azure Storage Account.
+
+---
+
+## 📌 Architecture Overview
+
+Terraform provisions the following Azure resources:
+
+* **Resource Group**: `dubbakas_rg`
+* **Storage Account**: `dubbakasstorageaccount`
+* **App Service Plan**: `example-app-service-plan` (Linux)
+* **Linux Function App**: `harish-function-qr`
+
+The Function App hosts a **QR Code Generator** built with Node.js. When triggered via HTTP, it generates a QR code and stores it in the Azure Storage Account.
+
+---
+
+## 🚀 Step 1: Provision Infrastructure with Terraform
+
+From your Terraform project directory, run:
+
+```bash
+terraform init
+terraform plan
+terraform apply
+```
+
+### What happens here?
+
+* `terraform init` → Initializes providers and modules
+* `terraform plan` → Shows what resources will be created
+* `terraform apply` → Creates Azure infrastructure
+
+After successful execution, all required Azure resources will be available.
+
+---
+
+## 🧩 Step 2: Prepare the Azure Function Code
+
+Clone the sample QR Code generator application:
+
+```bash
+git clone https://github.com/rishabkumar7/azure-qr-code.git
+cd azure-qr-code/qrCodeGenerator
+```
+
+### Update `local.settings.json`
+
+This file is used **only for local development**.
+
+Replace the storage connection string with the one created by Terraform:
+
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<your-storage-connection-string>",
+    "FUNCTIONS_WORKER_RUNTIME": "node"
+  }
+}
+```
+
+🔹 `AzureWebJobsStorage` → Used by Azure Functions to store logs and output files
+🔹 `FUNCTIONS_WORKER_RUNTIME` → Specifies Node.js runtime
+
+---
+
+## 🛠️ Step 3: Install Required Tools & Dependencies
+
+### 1️⃣ Install Azure Functions Core Tools (v4)
+
+**Option: MSI Installer (Recommended for Windows)**
+
+* Go to the Azure Functions Core Tools v4 release page
+* Download the **Windows x64 MSI installer**
+* Run the installer
+* Restart PowerShell
+* Verify installation:
+
+```bash
+func --version
+```
+
+---
+
+### 2️⃣ Install Node.js
+
+* Download **Node.js LTS** from the official website
+* During installation, select **Add to PATH**
+* Restart PowerShell or Git Bash
+* Verify installation:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+### 3️⃣ Install Application Dependencies
+
+Inside the function project directory:
+
+```bash
+npm install
+npm install qrcode
+```
+
+🔹 `npm install` → Installs project dependencies
+🔹 `qrcode` → Library used to generate QR codes
+
+---
+
+### 4️⃣ Run Function Locally
+
+Start the Azure Function locally:
+
+```bash
+func start
+```
+
+✅ If Node.js is installed correctly, the worker runtime will start successfully.
+
+---
+
+## ☁️ Step 4: Publish Function Code to Azure
+
+Deploy the function code to the Azure Function App created by Terraform:
+
+```bash
+func azure functionapp publish harish-function-qr --build remote
+```
+
+### Why `--build remote`?
+
+* Azure installs `npm` dependencies in the cloud
+* Avoids local OS or dependency conflicts
+
+After publishing:
+
+* The function appears in **Azure Portal → Function App → Functions**
+
+---
+
+## 🔄 Post-Deployment Steps
+
+1. Run `npm install` (if not already done)
+2. Publish the function code
+3. Update application settings (if required)
+4. Restart the Function App from Azure Portal
+
+---
+
+## 🧪 Testing the Function
+
+* Use **Postman** to send a GET request to the Function URL
+* If response status is **200 OK**, the function executed successfully
+* Open the URL returned in the response
+
+📌 The QR code:
+
+* Is generated successfully
+* Stored in the Azure Storage Account
+* Can be downloaded from the storage container
+
+---
+
+## ✅ Summary
+
+✔ Terraform automates infrastructure creation
+✔ Azure Functions hosts serverless QR generation logic
+✔ Node.js handles QR code generation
+✔ Azure Storage stores generated QR images
+
+This project is a complete example of **Infrastructure as Code + Serverless deployment on Azure**.
+
+---
+
+Happy Learning 🚀
