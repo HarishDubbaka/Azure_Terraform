@@ -92,4 +92,4 @@ This setup includes:
 - [Terraform AKS Module](https://registry.terraform.io/modules/Azure/aks/azurerm/latest)
 ```
 
----
+
