@@ -51,9 +51,3 @@ Terraform is an **Infrastructure as Code (IaC)** tool that lets you define and m
 - **Use Terraform modules** to enforce best practices consistently across teams.  
 
 ---
-
-👉 I can also draft a **production-style Terraform snippet** showing how to deploy Azure SQL DB with a private endpoint, so you see exactly how to avoid public exposure. Would you like me to prepare that?  
-
----
-
-Sources: 
