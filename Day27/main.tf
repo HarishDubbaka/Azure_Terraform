@@ -1,10 +1,14 @@
+# -------------------------
 # Resource Group
+# -------------------------
 resource "azurerm_resource_group" "app_rg" {
   name     = "harish-rg"
   location = "South India"
 }
 
-# Virtual Network
+# -------------------------
+# Networking
+# -------------------------
 resource "azurerm_virtual_network" "main" {
   name                = "demo-network"
   address_space       = ["10.0.0.0/16"]
@@ -12,7 +16,6 @@ resource "azurerm_virtual_network" "main" {
   resource_group_name = azurerm_resource_group.app_rg.name
 }
 
-# Subnet
 resource "azurerm_subnet" "internal" {
   name                 = "internal"
   resource_group_name  = azurerm_resource_group.app_rg.name
@@ -50,8 +53,6 @@ resource "azurerm_network_security_group" "vm_nsg" {
   }
 }
 
-
-# Public IP
 resource "azurerm_public_ip" "vm_ip" {
   name                = "demo-public-ip"
   location            = azurerm_resource_group.app_rg.location
@@ -59,7 +60,6 @@ resource "azurerm_public_ip" "vm_ip" {
   allocation_method   = "Static"
 }
 
-# Network Interface
 resource "azurerm_network_interface" "main" {
   name                = "demo-nic"
   location            = azurerm_resource_group.app_rg.location
@@ -78,17 +78,15 @@ resource "azurerm_network_interface_security_group_association" "example" {
   network_security_group_id = azurerm_network_security_group.vm_nsg.id
 }
 
-
-
+# -------------------------
 # Virtual Machine
+# -------------------------
 resource "azurerm_linux_virtual_machine" "demo_vm" {
   name                  = "demo-vm"
   location              = azurerm_resource_group.app_rg.location
   resource_group_name   = azurerm_resource_group.app_rg.name
   network_interface_ids = [azurerm_network_interface.main.id]
   size                  = "Standard_B1s"
-
-
 
   os_disk {
     caching              = "ReadWrite"
@@ -112,26 +110,19 @@ resource "azurerm_linux_virtual_machine" "demo_vm" {
   }
 
   provisioner "remote-exec" {
-    inline = [   
+    inline = [
       "sudo apt-get update",
       "sudo apt-get install -y nginx",
-      
-      # Create a sample welcome page
       "echo '<html><body><h1>#28daysofAZTerraform is Awesome!</h1></body></html>' | sudo tee /var/www/html/index.html",
-      
-      # Ensure nginx is running
       "sudo systemctl start nginx",
-      "sudo systemctl enable nginx" ]
+      "sudo systemctl enable nginx"
+    ]
 
-      connection {
-        type = "ssh"
-        user = "azureuser"
-        private_key = file("~/.ssh/id_rsa")
-        host = azurerm_public_ip.vm_ip.ip_address
-      }
-    
+    connection {
+      type        = "ssh"
+      user        = "azureuser"
+      private_key = file("~/.ssh/id_rsa")
+      host        = azurerm_public_ip.vm_ip.ip_address
+    }
   }
-
-
-
 }
