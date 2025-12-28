@@ -55,3 +55,67 @@ Alerting is **necessary before action** to provide context, prioritize responses
 Together, they safeguard systems, reduce downtime, and enable proactive operations.
 
 ---
+### Why do we use **stress testing** and why is it important?
+
+**Stress testing** is used to intentionally put high load on system resources (CPU, memory, disk, network) to see **how the system behaves under pressure**.
+
+#### 🔍 Why use `stress` on a VM?
+
+The `stress` tool helps you:
+
+* Artificially increase **CPU usage**
+* Simulate **real-world peak traffic or heavy workloads**
+* Validate system stability without waiting for real failures
+
+In your example:
+
+```bash
+stress --cpu 6 --timeout 300
+```
+
+👉 Forces 6 CPU workers to run at 100% for 5 minutes, increasing CPU load.
+
+---
+
+### ⭐ Importance of Stress Testing
+
+✅ **Test Monitoring & Alerts**
+
+* Ensures CPU alerts trigger correctly
+* Confirms alert thresholds and notifications (email, Teams, PagerDuty)
+
+✅ **Validate Auto-Scaling**
+
+* Checks if VM Scale Sets / autoscaling rules work as expected
+
+✅ **Identify Performance Bottlenecks**
+
+* Detects CPU saturation issues early
+* Helps tune VM sizes and configurations
+
+✅ **Improve Reliability**
+
+* Finds breaking points before real users do
+* Prevents unexpected outages in production
+
+✅ **Disaster Readiness**
+
+* Confirms system behavior during traffic spikes or attacks
+
+---
+
+### 🧠 Real-world DevOps Use Case
+
+Before going live:
+
+* Run stress tests
+* Monitor metrics
+* Adjust alerts & scaling
+  ➡️ Ensures **production-ready infrastructure**
+
+📌 **In short:**
+
+> Stress testing helps you **break the system safely** so it doesn’t break in production.
+
+#DevOps #Cloud #Azure #Monitoring #SRE #PerformanceTesting
+
