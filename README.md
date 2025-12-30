@@ -259,6 +259,90 @@ Today I explored the Type constraints in Terraform
 
 ---
 
+## 🌍 Day 23 –  Terraform Provisioners ( Mini Project 6 )
+
+### 🔹 Key Learnings
+
+* What are provisioners and their use case
+* Local vs remote vs file provisioners
+* Demo of all three provisioners
+
+---
+
+## 🌍 Day 24 –  AKS Cluster ( Real-time Project 1)
+
+### 🔹 Key Learnings
+
+* Kubernetes cluster setup
+* Custom module usage
+* Custom module creation for AKS, KeyVault,
+* No Service Principals involved.
+
+---
+
+## 🌍 Day 25 –   Policy as Code (PaC) Azure Policy and Governance ( Mini Project 7 )
+
+### 🔹 Key Learnings
+
+* Policy creation
+* Governance setup
+
+---
+
+## 🌍 Day 26 –   Azure SQL Server & Database + Key Vault( Mini Project 8 )
+
+### 🔹 Key Learnings
+
+* Database server and DB creation
+* Configuration
+
+---
+
+## 🌍 Day 27 –   Azure Monitoring ( Mini Project 9 )
+
+### 🔹 Key Learnings
+
+* Metrics alerts
+* Action Groups
+* Log analytics workspace
+* Log alerts 
+
+---
+
+## 🌍 Day 27 –   Azure Monitoring & Alerting ( Mini Project 9 )
+
+### 🔹 Key Learnings
+
+* Metrics alerts
+* Action Groups
+* Log analytics workspace
+* Log alerts to the mails 
+
+---
+
+## 🌍 Day 28 –   Managing Existing Azure Resource with Terraform Import (Real-time project 2)
+
+### 🔹 Key Learnings
+
+* Different ways of importing Azure resource to Terraform
+* Existing Azure resource using Terraform Import
+
+---
+
+## 🌍 Day 29 –  HCP Terraform (Terraform Cloud) and Workspaces
+
+### 🔹 Key Learnings
+
+* Cloud setup
+* Terraform Workflows 
+* Workspace management
+* Remote state management (no local .tfstate files)
+* Encrypted Terraform & environment variables
+* Approval-based applies for production safety
+
+---
+
+
 ## 📈 Next Steps
 
 Continuing the journey — next up
