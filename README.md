@@ -342,12 +342,16 @@ Today I explored the Type constraints in Terraform
 
 ---
 
+## 🌍 Day 30 –  3-Tier Architecture (Real-time project 3)
 
-## 📈 Next Steps
+### 🔹 Key Learnings
 
-Continuing the journey — next up
+* Complete architecture setup
+* Best practices
+* Reference Code Sample (Not Implemented – Cost Consideration(
 
 ---
+
 
 #Terraform #Azure #IaC #DevOps #Cloud #LearningJourney #
 
